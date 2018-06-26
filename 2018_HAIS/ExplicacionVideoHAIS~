@@ -1,0 +1,20 @@
+This process starts by obtaining relatively simple Separable Utility Regions
+(SURs) which allow the system to consistently achieve goals, although not nec-
+essarily in the most efficient manner (Explicar en base al video).
+
+The system tended to move in straight lines reducing the distance to one of its sensors.
+The point is that it not able to reach the goal in a direct way, as it follows SURs.
+
+The traces obtained by these SURs are then used to provide training data for a neural network based value function. => Re-description process
+
+After the re-description process the traces obtained they take the robot directly to the goal whatever its initial position on the stage.
+
+All in all, it has been possible to see the improvement in system efficiency when solving the task, derived from the two-step re-description process.
+
+---
+This process involves first generating a SUR based representation of the utility model that is quite simple to obtain and only requires determining the correlations between the appropriate directions in state space
+and the values of the sensors. These correlations allow the robot to consistently reach
+the goal, albeit not in the most efficient or direct way. As a second step, the information
+derived from the traces obtained through the SUR model are used in order to efficiently
+train a neural network that progressively provides a much more efficient utility function
+representation.
